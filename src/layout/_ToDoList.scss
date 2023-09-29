@@ -1,0 +1,69 @@
+.toDoList {
+    max-width: 600px;
+    background-color: #61cbff;
+    text-align: center;
+    font-size: 1.2rem;
+
+    .addTask {
+        padding: 20px;
+        width: 500px;
+
+        input {
+            margin-right: 15px;
+            padding: 10px 20px;
+            border: 1px solid transparent;
+            border-radius: 3px;
+        }
+        input:hover {
+            border: 1px solid #0560ff;
+        }
+
+        .btn {
+            padding: 10px 20px;
+            background-color: #0560ff;
+            border: 1px solid transparent;
+            font-weight: 700;
+            color: #fff;
+        }
+
+        .btn:hover {
+            border: 1px solid #fff;
+            opacity: .8;
+        }
+    }
+
+    .allTasks {
+        padding: 20px;
+        width: 500px;
+
+        ul {
+            list-style: none;
+
+            li {
+                position: relative;
+                margin-bottom: 10px;
+                padding: 5px;
+                background-color: #b0e6ff;
+                border-radius: 5px;
+                text-align: left;
+
+                &:hover a {
+                    display: block;
+                } 
+
+                a {
+                    display: none;
+                    position: absolute;
+                    top: 5px;
+                    right: 10px;
+                    color: gray;
+                    cursor: pointer;
+                    
+                    &:hover {
+                        color: red;
+                    }
+                }
+            }
+        }
+    }
+}
